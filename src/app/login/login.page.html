@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="content">
+  <div class="container">
+    <img class="img-a " src="https://duoc.modyocdn.com/uploads/d1065e11-cde5-40b4-b58f-59004919c757/original/logo_duoc.svg" alt="">
+
+    <h1>Ingresar</h1>
+  <form class="form" #formulario="ngForm" (ngSubmit)="metodo()">
+    <ion-input class="input"  type="text" 
+    placeholder="Usuario"
+    name="username"
+    [(ngModel)]="user.username"
+    required=""></ion-input>
+    <ion-input class="input" type="password"
+                        name="password"
+                        [(ngModel)]="user.password"
+                        required="" 
+                        placeholder="Contraseña"
+                        minlength="4"></ion-input>
+
+    <ion-button
+            type="submit" expand="block">
+              Entrar
+            </ion-button>
+  </form>
+  <a href="#">¿Has olvidado tu contraseña?</a>
+</div>
+</div>
+</ion-content>
+

@@ -1,7 +1,5 @@
 {
-  "name": "duocQr",
-  "integrations": {
-    "capacitor": {}
-  },
+  "name": "@ionic/latest",
+  "integrations": {},
   "type": "angular"
 }
